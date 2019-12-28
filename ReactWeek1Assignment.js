@@ -1,4 +1,4 @@
-
+'use strict';
 class Student {
     constructor( name, email, community ) {
         this.name = name;
