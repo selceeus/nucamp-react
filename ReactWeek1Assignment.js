@@ -1,4 +1,3 @@
-//use strict;
 
 class Student {
     constructor( name, email, community ) {
@@ -15,7 +14,7 @@ class Bootcamp {
         this.students = students;
     }
     registerStudent( student ) {
-        if ( this.students.filter(st => st.email === student.email) ) {
+        if ( this.students.filter(st => st.email === student.email).length ) {
             console.log(`${student.email} is already in our records for ${student.name}.`);
         }
         else {
